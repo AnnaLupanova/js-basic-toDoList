@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+i{
+    pointer-events: none;
+}
+.main .container .btn{
+    background-color: #fffee6;
+    outline: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top:72px;
+    background-color: transparent;
+
+}
+.content .window{
+    border: 2px solid #f9e976;
+
+    display: inline-block;
+    position: relative;
+    background-color: white;
+
+}
+.curBtn{
+    display: flex;
+    flex-direction: row;
+}
+td{
+   border-right: 1px solid #f9e976;
+    border-bottom: 1px solid #f9e976;
+    padding:0 13px;
+    font: 300 16px 'Poppins', sans-serif;
+
+}
+td:last-of-type{
+
+}
+
+
+.content .window .add{
+    border-radius: 50%;
+    background-color: white;
+    font: 400 16px 'Poppins', sans-serif;
+    height: 28px;
+    width: 28px;
+    position: sticky;
+    top: 99px;
+    left: 221px;
+    border: 1px solid #f9e976;
+    margin: 10px 0 3px 3px;
+
+
+
+}
+.content .window .add:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+.content .window button .add i{
+    fill: #f9e976;
+    margin-left: -1px;
+}
+.content{
+    display: none;
+    position: relative;
+}
+
+
+.content.active{
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+.modal {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.modal.show{
+    display: block;
+    position: absolute;
+    top: 92px;
+    left: -13px;
+
+
+}
+
+.popap {
+    position: absolute;
+    border: 2px solid #f9e976;
+    width: 300px;
+    height: 250px;
+    background: #fff;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: default;
+    border-radius: 3px;
+}
+
+.popap-head {
+    position: relative;
+    height: 25px;
+}
+
+.popap-head .close {
+    position: absolute;
+    height: 21px;
+    padding: 0 2px;
+    right: 10px;
+    top: 5px;
+    bottom: 0;
+    width: 14px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #f9e976;
+    cursor: pointer;
+    font: 400 15px 'Poppins', sans-serif;
+}
+
+
+.popap-head .close:hover {
+    border-color: #333;
+}
+
+.popap-main {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popap-form {
+    margin-bottom: 13px;
+}
+
+.popap-main label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popap-main label span {
+    font: 300 16px 'Poppins', sans-serif;
+    display: block;
+}
+
+.popap-main label input {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.popap-main label input.error{
+    border-color: red;
+}
+
+.popap-btn {
+    text-align: right;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid #f9e976;
+    padding: 5px;
+    border-radius: 5px;
+    border-bottom: none;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+.btn span{
+    font: 400 20px 'Poppins', sans-serif;
+    margin: 3px;
+}
+select{
+    font: 300 16px 'Poppins', sans-serif;
+}
+.btn-ok{
+
+    display: inline-block;
+    border: 1px solid #f9e976;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    font: 400 16px 'Poppins', sans-serif;
+}
+
+
+.btn:hover {
+    border-color: #333;
+}
+button{
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+.edit{
+    background:#ffffff ;
+     outline: none;
+    font-size: 16px;
+    margin-right: 3px;
+
+}
+.done{
+    background:#ffffff ;
+    outline: none;
+    font-size: 16px;
+    margin-right: 3px;
+
+}
+.remove{
+    background:#ffffff ;
+    outline: none;
+    font-size: 16px;
+    margin-right: 3px;
+
+}
+.delete{
+    background:#ffffff ;
+    outline: none;
+    font-size: 16px;
+    margin-right: 3px;
+
+}
+.restore{
+    background:#ffffff ;
+    outline: none;
+    font-size: 16px;
+    margin-right: 3px;
+
+}

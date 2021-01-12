@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="main">
+    <div class="container">
+        <button class="btn active"><span>TASKS</span></button>
+        <button class="btn"><span>DONE</span></button>
+        <button class="btn"><span>REMOVED</span></button>
+
+        <div class="content active">
+            <div class="window">
+                <table cellpadding="2" border="2" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Description</td>
+                        <td>Priority</td>
+                    </tr>
+                    </thead>
+                    <tbody class="table">
+
+                    </tbody>
+
+                </table>
+
+                <button class="add">
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="modal">
+
+                    <div class="popap">
+                        <div class="popap-head">
+                            <div class="close">X</div>
+                        </div>
+                        <div class="popap-main">
+                            <form class="popap-form">
+                                <label>
+                                    <span>Name</span>
+                                    <input type="text" class="create-task" name="taskName"/>
+                                </label>
+                                <label>
+                                    <span>Description</span>
+                                    <textarea class="create-task" name="taskDesc"></textarea>
+                                </label>
+                                <label>
+                                    <select class="create-task" name="taskPriority">
+                                        <option value="low">LOW</option>
+                                        <option value="normal">NORMAL</option>
+                                        <option value="high">HIGH</option>
+                                    </select>
+                                </label>
+
+                            </form>
+                            <div class="popap-btn">
+
+                                <div class="btn-ok">ok</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="content">
+            <div class="window">
+
+                <table cellpadding="2" border="2" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Description</td>
+                        <td>Priority</td>
+                    </tr>
+                    </thead>
+                    <tbody class="table-done">
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <div class="content">
+            <div class="window">
+                <table cellpadding="2" border="2" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Description</td>
+                        <td>Priority</td>
+                    </tr>
+                    </thead>
+                    <tbody class="table-remove">
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js.js"></script>
+</body>
+</html>
